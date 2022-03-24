@@ -9,11 +9,8 @@ import time
 class UrlRefresh():
     def url_refresh(self,path_to_chromedriver,url,sleep_time):
         driver = webdriver.Chrome(path_to_chromedriver)
-        # driver.quit()
-        ## Enter URL here.
-        driver.get(url)
-
-        # Edit Varialbes here
+         driver.get(url)
+         
         while True:
             time.sleep(sleep_time)
             driver.refresh()
@@ -21,8 +18,8 @@ class UrlRefresh():
 s=UrlRefresh()
 
 if __name__ == '__main__':
-    path_to_chromedriver='/Users/talelzakhama/Documents/UrlRefresh/chromedriver'
-    url='https://realpython.com/python-pep8/'
-    sleep_time=5
+    path_to_chromedriver='/Users/talelzakhama/Documents/UrlRefresh/chromedriver' #Path to Chrome Driver.
+    url='https://realpython.com/python-pep8/' #URL
+    sleep_time=5 #Cycle Length
     s.url_refresh(path_to_chromedriver,url,sleep_time)
 
