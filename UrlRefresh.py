@@ -18,10 +18,11 @@ class UrlRefresh():
             time.sleep(sleep_time)
             driver.refresh()
         driver.quit()
-
 s=UrlRefresh()
-path_to_chromedriver='/Volumes/GoogleDrive/My Drive/TZ.KK/Academic Work_related_resources/Codes_Scripts/Talel_Draft_Codes/URL_Refresh/chromedriver'
-url='https://realpython.com/python-pep8/'
-sleep_time=5
-s.url_refresh(path_to_chromedriver,url,sleep_time)
+
+if __name__ == '__main__':
+    path_to_chromedriver='/Users/talelzakhama/Documents/UrlRefresh/chromedriver'
+    url='https://realpython.com/python-pep8/'
+    sleep_time=5
+    s.url_refresh(path_to_chromedriver,url,sleep_time)
 
